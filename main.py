@@ -1,8 +1,9 @@
-import cv2
-import time
 import os
-from multiprocessing import Pool
 import re
+import time
+from multiprocessing import Pool
+
+import cv2
 from transliterate import translit
 
 
