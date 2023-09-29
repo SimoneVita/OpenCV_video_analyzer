@@ -1,47 +1,46 @@
 # OpenCV_video_analyzer
+Чтобы посмотреть Readme на русском - [нажми сюда](https://github.com/SimoneVita/OpenCV_video_analyzer/blob/main/README.md)
 _________________________________________________
-## Описание
-Приложение, которое анализирует видео, определяет на нем движение и сохраняет скриншоты движения и лог активности.
+## Description
+Video analyzing app, which detects actions and save frames and activity log.
 
-### OpenCV_video_analyzer - возможности:
+### OpenCV_video_analyzer - features:
 
-- Анализирует видео любого формата.
-- Делает скриншоты с отметкой, где именно было распознано движение.
-- В журнале указывает время начала и окончания движения.
-- Анализирует сразу несколько видео (см. особенности в техническом описании).
-- Скриншоты из разных видео сортирует в разные папки.
+- Analyzes video of any format.
+- Saves frames with contour of action persons/things.
+- Specifies the time of action - start and finish.
+- Can analyse more, than 1 video at once (look for 'Specific' in 'Technical description').
+- Frames of different videos sorts to different directories.
  
 _____________________________________________________
 
-## Техническое описание
+## Technical description
 
-### Особенности
-Приложение способно обрабатывать сразу несколько видео и эффектиность его работы на данный момент не отслеживается и не контролируется. Тестирование проводилось на процессоре M1 Pro, ограничения по ядрам не устанавливались. Опытным путем обработка одновременно 10 видео, каждое из которых длится 1.5 часа, прошла успешно.
+### Specific:
+The app can analyze a number of videos and it's efficiency is not monitored and controlled now. Tested on M1 Pro chip without cores limitation. Experimentally analyziong of 10 simultaneous videos (each lasts 1.5 hours) was successful.
 
-### Примененные технологии
+### Applyed technologies:
  > opencv-python==4.8.0.76
  > numpy==1.26
 
-### Как запустить проект:
+### How to lounch the app:
 
-Клонировать репозиторий и перейти в него в командной строке:
+Clone the repository via terminal:
 
 ```
 git clone git@github.com:SimoneVita/OpenCV_video_analyzer.git
 ```
 
-Создать директорию для файлов к обработке:
+Make the directory for unanalyzed videos:
 ```
 mkdir videos
 ```
 
-Погрузить в директорию videos/ видеофайлы для обработки.
+Put videos to analyze in the 'videos/' directory
 
+It's possible to assign any other convenient directory by changing the constant ```path_to_vid``` in main.py
 
-Допустимо назначить любую другую удобную дирукторию изменив константу ```path_to_vid``` в файле main.py
-
-
-Cоздать и активировать виртуальное окружение:
+Create and activate a virtual environment:
 
 ```
 python3 -m venv venv
@@ -50,18 +49,18 @@ python3 -m venv venv
 ```
 source venv/bin/activate
 ```
-Установить зависимости из файла requirements.txt:
+Install dependencies from requirements.txt:
 ```
 pip install -r requirements.txt
 ```
-Запустить проект:
+Start the app:
 ```
 python3 main.py
 ```
 
 ______________________________________
-### Автор
-Виталий Симоненко(https://github.com/SimoneVita)
+### Author
+Vitaly Simonenko (https://github.com/SimoneVita)
 
-### Лицензия
+### License
 BSD 3-Clause License
