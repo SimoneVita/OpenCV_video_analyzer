@@ -1,4 +1,5 @@
 # OpenCV_video_analyzer
+To read Readme in English - [press here](https://github.com/SimoneVita/OpenCV_video_analyzer/blob/main/README_eng.md)
 _________________________________________________
 ## Описание
 Приложение, которое анализирует видео, определяет на нем движение и сохраняет скриншоты движения и лог активности.
