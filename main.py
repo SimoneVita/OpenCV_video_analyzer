@@ -7,8 +7,8 @@ import cv2
 from transliterate import translit
 
 
-path_to_vid = "videos/"  # Путь откуда брать видео
-save_path = "results/"  # Путь, куда вывести результат
+path_to_vid = "videos/"  # Путь откуда брать видео/Path to the videos
+save_path = "results/"  # Путь, куда вывести результат/Path for result
 
 
 def find_video_filenames():
@@ -161,7 +161,7 @@ if __name__ == '__main__':
     file_names = find_video_filenames()
     print(file_names)
     print('Следующие файлы запущены для распознавания:')
-    p = Pool()  # Здесь можно ограничить количество ядер, например p = Pool(5)
+    p = Pool()  # Ограничить кол-во ядер/To limit the number of cores - p = Pool(5)
     p.map(main, file_names)
     p.close()
     p.join()
