@@ -17,7 +17,7 @@ _____________________________________________________
 ## Technical description
 
 ### Specific:
-The app can analyze a number of videos and it's efficiency is not monitored and controlled now. Tested on M1 Pro chip without cores limitation. Experimentally analyziong of 10 simultaneous videos (each lasts 1.5 hours) was successful.
+The app can analyze a number of videos and it's efficiency is not monitored and controlled now. Tested on M1 Pro chip without cores limitation. Experimentally analyzing of 10 simultaneous videos (each lasts 1.5 hours) was successful.
 
 ### Applyed technologies:
  > opencv-python==4.8.0.76
